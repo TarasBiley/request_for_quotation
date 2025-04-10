@@ -43,6 +43,8 @@ def parse_parts(text: str) -> str:
             result_lines.append(f"Alt: {', '.join(alt_list)}")
         result_lines.append("")  # Пустая строка между позициями
 
+    result_lines.append("")
+    
     return "\n".join(result_lines)
 
 # Команда /start
