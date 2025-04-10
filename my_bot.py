@@ -11,7 +11,7 @@ def is_part_number_like(text: str) -> bool:
 
 def parse_parts(text: str) -> str:
     lines = text.strip().splitlines()
-    result_lines = ["Hello Team, \n\nCould you please provide us with a quotation for the following part:\n\n"]
+    result_lines = ["Hello Team, \n\nCould you please provide us with a quotation for the following part:\n"]
 
     for line in lines:
         if not line.strip():
@@ -39,7 +39,6 @@ def parse_parts(text: str) -> str:
         result_lines.append(f"P/N: {pn}")
         result_lines.append(f"Description: {description}")
         result_lines.append(f"Qty: {qty} EA")
-        result_lines.append(f" ")
         if alt_list:
             result_lines.append(f"Alt: {', '.join(alt_list)}")
         result_lines.append("")  # Пустая строка между позициями
