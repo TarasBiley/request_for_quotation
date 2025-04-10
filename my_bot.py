@@ -11,7 +11,7 @@ def is_part_number_like(text: str) -> bool:
 
 def parse_parts(text: str) -> str:
     lines = text.strip().splitlines()
-    result_lines = ["Hello Team, \n\nCould you please provide us with a quotation for the following part:\n"]
+    result_lines = ["Hello Team, \n\nCould you please provide us with a quotation for the following part:\n\n"]
 
     for line in lines:
         if not line.strip():
