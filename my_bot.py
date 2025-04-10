@@ -39,6 +39,7 @@ def parse_parts(text: str) -> str:
         result_lines.append(f"P/N: {pn}")
         result_lines.append(f"Description: {description}")
         result_lines.append(f"Qty: {qty} EA")
+        result_lines.append(f" ")
         if alt_list:
             result_lines.append(f"Alt: {', '.join(alt_list)}")
         result_lines.append("")  # Пустая строка между позициями
